@@ -1,0 +1,233 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: rgb(57,47,127);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+ h1{
+
+    color: white;
+    font-size:3rem;
+    margin: 20px;
+}
+
+.form-container{
+
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+   
+   
+}
+
+.search-input-container{
+
+    width: 100%;
+    max-width: 500px;
+        height: 10vh;
+    background-color: rgb(65,76,139);
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+input{
+
+    width: 100%;
+    padding: 5px 20px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    
+    
+}
+
+input::placeholder{
+
+    color: white;
+    font-size: 1.2;
+}
+
+.btn{
+
+    background-color: rgb(255,74,36);
+    width: auto; /* Change to auto for flexible width */
+    max-width: 100px;
+    padding: 25px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    &:hover{
+        background-color: rgb(168, 42, 16);
+
+
+    }
+
+
+
+}
+
+.images img{
+
+    width: 25%;
+    height: 380px;
+    border-radius: 20px;
+
+}
+
+.images{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.show-more{
+
+    padding:15px 20px;
+    font-weight: 800;
+    border-radius: 10px;
+    background-color: rgb(255,74,36);
+    color: white;
+    border: none;
+    display: none;
+    
+    &:hover{
+
+        background-color: rgb(191, 51, 23);
+
+    }
+}
+
+
+.show-btn{
+
+display: flex;
+justify-content: center;
+margin: 0.8rem;
+
+}
+
+/* For devices with a maximum width of 1200px */
+@media (max-width: 1200px) {
+    .images img {
+        width: 30%; /* Adjust width for larger screens */
+    }
+}
+
+/* For devices with a maximum width of 992px */
+@media (max-width: 992px) {
+    .images img {
+        width: 45%; /* Adjust width for medium screens */
+    }
+}
+
+/* For devices with a maximum width of 768px */
+@media (max-width: 768px) {
+    .images img {
+        width: 100%; /* Full width for smaller tablets */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* For devices with a maximum width of 576px */
+@media (max-width: 576px) {
+    .images img {
+        width: 100%; /* Full width for mobile devices */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* For devices with a maximum width of 1200px */
+@media (max-width: 1200px) {
+    .search-input-container {
+        width: 80%; /* Increase width for larger screens */
+    }
+}
+
+/* For devices with a maximum width of 992px */
+@media (max-width: 992px) {
+    .search-input-container {
+        width: 90%; /* Increase width for medium screens */
+    }
+}
+
+/* For devices with a maximum width of 768px */
+@media (max-width: 768px) {
+    .search-input-container {
+        width: 100%; /* Full width for small tablets */
+        max-width: 500px; /* Limit max width */
+    }
+}
+
+/* For devices with a maximum width of 576px */
+@media (max-width: 576px) {
+    .search-input-container {
+        width: 100%; /* Full width for mobile devices */
+        max-width: 400px; /* Limit max width for better appearance */
+    }
+}
+
+
+
+/* h1 */
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5rem; /* Smaller font size for larger screens */
+    }
+}
+
+/* For devices with a maximum width of 992px */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2rem; /* Further reduce font size for medium screens */
+    }
+}
+
+/* For devices with a maximum width of 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Adjust font size for small tablets */
+    }
+}
+
+/* For devices with a maximum width of 576px */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem; /* Further adjust font size for mobile devices */
+    }
+}
